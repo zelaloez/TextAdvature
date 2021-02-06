@@ -104,10 +104,18 @@ void Player::gameover()
 	std::cout << "================================" << std::endl;
 	std::cout << "GAME OVER!" << std::endl;
 	std::cout << "================================" << std::endl;
-	std::cout << "Press 'q' to quit: ";
-	char q = 'q';
-	std::cin >> q;
-	std::cout << std::endl;
+	std::cout << "Press 'n' to new start or press 'q' to quit ";
+	char select;
+        std::cin >> select;
+	if (select == 'n')
+	{
+	    createClass();	
+	}
+	
+	else if (select=='q')
+	{
+		std::cout << std::endl;
+	}
 }
 
 bool Player::attack(Monster& monster)
