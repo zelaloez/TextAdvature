@@ -57,6 +57,7 @@ void Monster::attack(Player& player)
 		if (totalDamage <= 0)
 		{
 			std::cout << "The monster's attack failed to " << "penetrate your armor." << std::endl;
+			player.setGold(totalDamage);
 		}
 		else
 		{
