@@ -70,4 +70,5 @@ void Monster::attack(Player& player)
 		std::cout << "The " << mName << " missed!" << std::endl;
 	}
 	std::cout << std::endl;
+	
 }
